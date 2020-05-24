@@ -1,4 +1,6 @@
 /** Import of sass elements  **/
+/** Animations **/
+/** END of Animations **/
 /** mixin lanoteenchantee **/
 /** END of mixin lanoteenchantee **/
 /** mixin lechicalafrancaise **/
@@ -72,105 +74,6 @@ table {
   height: 764px;
   margin: 50px;
   box-shadow: 0 0 10px grey;
-  opacity: 1;
-  transform: scale(1);
-  transition: all 300ms 150ms ease-out;
-}
-.button h2, .button a, .button .fas {
-  transition: transform 450ms ease-in-out;
-}
-.button:hover {
-  opacity: 0.5;
-}
-.button:hover .button {
-  transform: scale(1);
-}
-.button:hover h2 {
-  transform: scale(1.15);
-}
-.button:hover .fas {
-  transform: scale(1.15);
-}
-.button:hover a {
-  transform: scale(1.4);
-}
-
-.button-lanoteenchantee {
-  background-color: #fcdfdb;
-}
-.button-lanoteenchantee .fas {
-  font-size: 80px;
-  background: linear-gradient(to right, #f05060, #f6916a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.button-lanoteenchantee h2 {
-  font-family: "devonshire", "Arial", sans-serif;
-  color: #3d1319;
-  font-size: 50px;
-  padding-top: 10px;
-  padding-bottom: 60px;
-}
-.button-lanoteenchantee a {
-  font-family: "segoeregular", "Arial", sans-serif;
-  color: #3d1319;
-  font-size: 60px;
-  font-weight: bolder;
-}
-
-.button-lechicalafrancaise {
-  background-color: #fff5fd;
-}
-.button-lechicalafrancaise h2 {
-  font-family: "croissantone", "Arial", sans-serif;
-  background: linear-gradient(to right bottom, #e38a12, #a56799, #6e4ccc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 40px;
-  padding-bottom: 70px;
-}
-.button-lechicalafrancaise a {
-  font-family: "Cantata One", serif;
-  color: #e38a12;
-  font-weight: bolder;
-  font-size: 80px;
-}
-
-.button-ledelicedespapilles {
-  background-color: #f0faff;
-}
-.button-ledelicedespapilles h2 {
-  font-family: "Dancing Script", cursive;
-  background: linear-gradient(to right bottom, #0229dd, #0889fb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding: 15px;
-  font-size: 60px;
-  padding-left: 15px;
-  padding-bottom: 70px;
-}
-.button-ledelicedespapilles a {
-  color: #0887f1;
-  font-family: "segoeregular", "Arial", sans-serif;
-  font-size: 70px;
-}
-
-.button-lapalettedugout {
-  background-color: #eaffea;
-}
-.button-lapalettedugout h2 {
-  font-family: "kaushanscript", cursive;
-  background: linear-gradient(to right bottom, #06923a, #beff7d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding: 15px;
-  font-size: 60px;
-  padding-bottom: 70px;
-}
-.button-lapalettedugout a {
-  color: #72bf56;
-  font-family: "segoeregular", "Arial", sans-serif;
-  font-size: 70px;
 }
 
 .maincontainer {
@@ -182,7 +85,12 @@ table {
   max-height: 2388px;
 }
 
-.menucontainer {
+h1, aside h2, footer a {
+  font-family: "Montserrat", sans-serif;
+  color: #fcca46;
+}
+
+.menuscontainer {
   display: flex;
   flex-direction: column;
   right: 0;
@@ -194,7 +102,7 @@ table {
   padding-bottom: 120px;
 }
 @media screen and (max-width: 1600px) {
-  .menucontainer {
+  .menuscontainer {
     margin-top: -80px;
     padding-bottom: 130px;
   }
@@ -220,6 +128,12 @@ header {
   }
 }
 
+h1 {
+  letter-spacing: -5px;
+  font-size: 70px;
+  font-weight: bolder;
+}
+
 article {
   display: flex;
   flex-wrap: wrap;
@@ -231,19 +145,54 @@ article {
 aside {
   display: flex;
   width: 650px;
-  height: 80px;
+  height: auto;
   align-self: center;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   margin-top: 60px;
   margin-bottom: 80px;
   border-radius: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #579C87;
+  font-family: "Montserrat", sans-serif;
+  color: #fcca46;
+}
+aside .dots span:nth-child(2) {
+  animation-delay: 300ms;
+}
+aside .dots span:nth-child(3) {
+  animation-delay: 600ms;
+}
+aside .dots span {
+  width: 7px;
+  height: 7px;
+  margin: 0 3px;
+  background-color: #fcca46;
+  border-radius: 50%;
+  display: inline-block;
+  animation: dotsanimation 1500ms infinite ease-in-out;
+}
+@keyframes dotsanimation {
+  50% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 0;
+  }
 }
 @media screen and (max-width: 1600px) {
   aside {
-    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
   }
+}
+
+.next {
+  font-size: 40px;
+  padding-right: 10px;
 }
 
 footer {
@@ -266,6 +215,9 @@ footer {
   }
 }
 
+footer a {
+  font-size: 30px;
+}
 footer a:hover {
   animation: wiggle 3000ms infinite;
 }
@@ -282,6 +234,10 @@ footer a:hover {
   100% {
     transform: rotate(0deg);
   }
+}
+
+a {
+  text-decoration: none;
 }
 
 .logo a {
@@ -305,7 +261,7 @@ footer a:hover {
   max-width: 1190px;
   min-width: 90%;
   margin: 10px;
-  padding-top: 90px;
+  padding-top: 150px;
   box-shadow: 0 0 10px grey;
 }
 @media screen and (max-width: 1200px) {
@@ -338,6 +294,8 @@ footer a:hover {
   width: 90%;
   padding-left: 100px;
   font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .price {
@@ -346,7 +304,10 @@ footer a:hover {
   width: 10%;
   padding-right: 100px;
   font-weight: bolder;
-  font-size: 25px;
+  font-size: 30px;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 h3 {
@@ -357,11 +318,10 @@ h3 {
 }
 
 .footmenu {
-  padding-top: 50px;
-  padding-bottom: 90px;
+  padding-top: 90px;
+  padding-bottom: 120px;
 }
 
-/**@import "./pages";**/
 /** Fonts **/
 @font-face {
   font-family: "devonshire";
@@ -394,81 +354,51 @@ h3 {
   font-style: normal;
 }
 /** END of Fonts **/
-/** Decorations sizes and fonts ohmyfood page **/
-h1, aside h2, footer a {
-  font-family: "Montserrat", sans-serif;
-  color: #fcca46;
+.button-lanoteenchantee {
+  background-color: #fcdfdb;
 }
-
-h1 {
-  letter-spacing: -5px;
-  font-size: 70px;
+.button-lanoteenchantee .fas {
+  font-size: 80px;
+  background: linear-gradient(to right, #f05060, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.button-lanoteenchantee h2 {
+  font-family: "devonshire", "Arial", sans-serif;
+  color: #3d1319;
+  font-size: 60px;
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+.button-lanoteenchantee a {
+  font-family: "segoeregular", "Arial", sans-serif;
+  color: #3d1319;
+  font-size: 60px;
   font-weight: bolder;
 }
 
-aside {
-  font-weight: lighter;
-  height: 130px;
-  flex-direction: row;
-  align-items: baseline;
-  padding-top: 30px;
-  justify-content: center;
-  width: 650px;
-  height: 80px;
-  margin-top: 60px;
-  margin-bottom: 80px;
-  border-radius: 20px;
-  background-color: #579C87;
-  font-family: "Montserrat", sans-serif;
-  color: #fcca46;
+.button-lanoteenchantee--zoom {
+  opacity: 1;
+  transform: scale(1);
+}
+.button-lanoteenchantee--zoom h2, .button-lanoteenchantee--zoom a, .button-lanoteenchantee--zoom .fas {
+  transition: transform 200ms ease-in-out;
+}
+.button-lanoteenchantee--zoom:hover h2, .button-lanoteenchantee--zoom:hover .fas {
+  opacity: 0.5;
+  transform: scale(1.15);
+}
+.button-lanoteenchantee--zoom:hover a {
+  opacity: 0.5;
+  transform: scale(1.3);
 }
 
-.next {
-  font-size: 40px;
-  padding-right: 10px;
-}
-
-.dots span:nth-child(2) {
-  animation-delay: 300ms;
-}
-
-.dots span:nth-child(3) {
-  animation-delay: 600ms;
-}
-
-.dots span {
-  width: 7px;
-  height: 7px;
-  margin: 0 3px;
-  background-color: #fcca46;
-  border-radius: 50%;
-  display: inline-block;
-  animation: dotsanimation 1500ms infinite ease-in-out;
-}
-
-@keyframes dotsanimation {
-  50% {
-    opacity: 0;
-    transform: scale(0.7);
-  }
-  100% {
-    opacity: 0;
-  }
-}
-footer a {
-  font-size: 30px;
-}
-
-a {
-  text-decoration: none;
-}
-
-/** END of Decorations sizes and fonts ohmyfood page **/
 .restomenu-lanoteenchantee {
   background-color: #fcdfdb;
+  padding-top: 90px;
 }
 .restomenu-lanoteenchantee .fas {
-  font-size: 80px;
+  font-size: 90px;
   padding-bottom: 10px;
   background: linear-gradient(to right, #f05060, #f6916a);
   -webkit-background-clip: text;
@@ -477,7 +407,7 @@ a {
 .restomenu-lanoteenchantee h4 {
   font-family: "devonshire", "Arial", sans-serif;
   color: #3d1319;
-  font-size: 70px;
+  font-size: 80px;
 }
 .restomenu-lanoteenchantee h5, .restomenu-lanoteenchantee p {
   font-family: "segoeregular", "Arial", sans-serif;
@@ -502,7 +432,7 @@ a {
 }
 .restomenu-lanoteenchantee h5 {
   display: flex;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bolder;
   width: 100%;
   justify-content: space-between;
@@ -530,7 +460,7 @@ a {
   align-items: center;
 }
 .footmenu-lanoteenchantee .fas {
-  font-size: 50px;
+  font-size: 60px;
   background: linear-gradient(to right, #f05060, #f6916a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -538,8 +468,42 @@ a {
 .footmenu-lanoteenchantee h2 {
   font-family: "devonshire", "Arial", sans-serif;
   color: #3d1319;
-  font-size: 50px;
+  font-size: 60px;
   padding-left: 15px;
+}
+
+.button-lechicalafrancaise {
+  background-color: #fff5fd;
+}
+.button-lechicalafrancaise h2 {
+  font-family: "croissantone", "Arial", sans-serif;
+  background: linear-gradient(to right bottom, #e38a12, #6e4ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  padding-bottom: 70px;
+}
+.button-lechicalafrancaise a {
+  font-family: "Cantata One", serif;
+  color: #e38a12;
+  font-weight: bolder;
+  font-size: 80px;
+}
+
+.button-lechicalafrancaise--zoom {
+  opacity: 1;
+  transform: scale(1);
+}
+.button-lechicalafrancaise--zoom h2, .button-lechicalafrancaise--zoom a, .button-lechicalafrancaise--zoom .fas {
+  transition: transform 200ms ease-in-out;
+}
+.button-lechicalafrancaise--zoom:hover h2, .button-lechicalafrancaise--zoom:hover .fas {
+  opacity: 0.5;
+  transform: scale(1.15);
+}
+.button-lechicalafrancaise--zoom:hover a {
+  opacity: 0.5;
+  transform: scale(1.3);
 }
 
 .restomenu-lechicalafrancaise {
@@ -547,18 +511,20 @@ a {
 }
 .restomenu-lechicalafrancaise h4 {
   font-family: "croissantone", "Arial", sans-serif;
-  background: linear-gradient(to right bottom, #e38a12, #a56799, #6e4ccc);
+  background: linear-gradient(to right bottom, #e38a12, #6e4ccc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 50px;
+  font-size: 60px;
+  padding-bottom: 15px;
 }
 .restomenu-lechicalafrancaise .price {
-  font-weight: lighter;
+  font-weight: initial;
 }
 
 .firstpartmenu-lechicalafrancaise h5 {
   display: flex;
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: bolder;
   font-family: "Cantata One", serif;
   color: #e38a12;
   width: 100%;
@@ -601,7 +567,8 @@ a {
 
 .secondpartmenu-lechicalafrancaise h5 {
   display: flex;
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: bolder;
   font-family: "Cantata One", serif;
   color: #a56799;
   width: 100%;
@@ -644,7 +611,8 @@ a {
 
 .thirdpartmenu-lechicalafrancaise h5 {
   display: flex;
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: bolder;
   font-family: "Cantata One", serif;
   color: #6e4ccc;
   width: 100%;
@@ -685,7 +653,7 @@ a {
   background-color: #6e4ccc;
 }
 
-.firstpartmenu-lechicalafrancaise p {
+.firstpartmenu-lechicalafrancaise {
   font-family: "Cantata One", serif;
   color: #e38a12;
 }
@@ -702,11 +670,46 @@ a {
 
 .footmenu-lechicalafrancaise h2 {
   font-family: "croissantone", "Arial", sans-serif;
-  background: linear-gradient(to right bottom, #e38a12, #a56799, #6e4ccc);
+  background: linear-gradient(to right bottom, #e38a12, #6e4ccc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 40px;
   padding-left: 15px;
+}
+
+.button-ledelicedespapilles {
+  background-color: #f0faff;
+}
+.button-ledelicedespapilles h2 {
+  font-family: "Dancing Script", cursive;
+  background: linear-gradient(to right bottom, #0229dd, #0889fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 15px;
+  font-size: 60px;
+  padding-left: 15px;
+  padding-bottom: 70px;
+}
+.button-ledelicedespapilles a {
+  color: #0887f1;
+  font-family: "segoeregular", "Arial", sans-serif;
+  font-size: 70px;
+}
+
+.button-ledelicedespapilles--zoom {
+  opacity: 1;
+  transform: scale(1);
+}
+.button-ledelicedespapilles--zoom h2, .button-ledelicedespapilles--zoom a, .button-ledelicedespapilles--zoom .fas {
+  transition: transform 200ms ease-in-out;
+}
+.button-ledelicedespapilles--zoom:hover h2, .button-ledelicedespapilles--zoom:hover .fas {
+  opacity: 0.5;
+  transform: scale(1.15);
+}
+.button-ledelicedespapilles--zoom:hover a {
+  opacity: 0.5;
+  transform: scale(1.3);
 }
 
 .restomenu-ledelicedespapilles {
@@ -718,24 +721,30 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 15px;
-  font-size: 80px;
+  font-size: 110px;
   padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 60px;
 }
 .restomenu-ledelicedespapilles h5, .restomenu-ledelicedespapilles p {
   color: #000;
   font-family: "segoeregular", "Arial", sans-serif;
 }
+.restomenu-ledelicedespapilles .choice {
+  padding-left: 200px;
+}
 .restomenu-ledelicedespapilles .price {
+  padding-right: 200px;
   font-weight: lighter;
 }
 
 .firstpartmenu-ledelicedespapilles h5 {
-  font-size: 25px;
+  font-size: 30px;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-left: 70px;
+  padding-right: 70px;
   align-items: center;
 }
 .firstpartmenu-ledelicedespapilles h5 span {
@@ -771,12 +780,12 @@ a {
 }
 
 .secondpartmenu-ledelicedespapilles h5 {
-  font-size: 25px;
+  font-size: 30px;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-left: 70px;
+  padding-right: 70px;
   align-items: center;
 }
 .secondpartmenu-ledelicedespapilles h5 span {
@@ -812,12 +821,12 @@ a {
 }
 
 .thirdpartmenu-ledelicedespapilles h5 {
-  font-size: 25px;
+  font-size: 30px;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-left: 70px;
+  padding-right: 70px;
   align-items: center;
 }
 .thirdpartmenu-ledelicedespapilles h5 span {
@@ -858,8 +867,42 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 15px;
-  font-size: 50px;
+  font-size: 70px;
   padding-left: 15px;
+}
+
+.button-lapalettedugout {
+  background-color: #eaffea;
+}
+.button-lapalettedugout h2 {
+  font-family: "kaushanscript", cursive;
+  background: linear-gradient(to right bottom, #06923a, #beff7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 15px;
+  font-size: 60px;
+  padding-bottom: 70px;
+}
+.button-lapalettedugout a {
+  color: #72bf56;
+  font-family: "segoeregular", "Arial", sans-serif;
+  font-size: 70px;
+}
+
+.button-lapalettedugout--zoom {
+  opacity: 1;
+  transform: scale(1);
+}
+.button-lapalettedugout--zoom h2, .button-lapalettedugout--zoom a, .button-lapalettedugout--zoom .fas {
+  transition: transform 200ms ease-in-out;
+}
+.button-lapalettedugout--zoom:hover h2, .button-lapalettedugout--zoom:hover .fas {
+  opacity: 0.5;
+  transform: scale(1.15);
+}
+.button-lapalettedugout--zoom:hover a {
+  opacity: 0.5;
+  transform: scale(1.3);
 }
 
 .restomenu-lapalettedugout {
@@ -871,13 +914,20 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 15px;
-  font-size: 80px;
+  font-size: 110px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 60px;
 }
 .restomenu-lapalettedugout h5, .restomenu-lapalettedugout p {
   color: #000;
   font-family: "segoeregular", "Arial", sans-serif;
 }
+.restomenu-lapalettedugout .choice {
+  padding-left: 200px;
+}
 .restomenu-lapalettedugout .price {
+  padding-right: 200px;
   font-weight: lighter;
 }
 .restomenu-lapalettedugout h5 {
@@ -885,8 +935,8 @@ a {
   font-size: 30px;
   width: 100%;
   justify-content: space-between;
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-left: 70px;
+  padding-right: 70px;
   align-items: center;
 }
 
@@ -992,7 +1042,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 15px;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 /** END of Import of sass elements **/
