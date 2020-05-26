@@ -64,31 +64,17 @@ table {
 
 /** END of Eric Meyer Reset **/
 .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   width: 540px;
   height: 764px;
   margin: 50px;
-  -webkit-box-shadow: 0 0 10px grey;
-          box-shadow: 0 0 10px grey;
+  box-shadow: 0 0 10px grey;
   opacity: 1;
-  -webkit-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 .button:hover {
@@ -96,13 +82,8 @@ table {
 }
 
 .maincontainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
   max-width: 1500px;
   height: 100%;
@@ -115,13 +96,8 @@ h1, aside h2, footer a {
 }
 
 .menuscontainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   right: 0;
   left: 0;
   top: 240px;
@@ -138,17 +114,11 @@ h1, aside h2, footer a {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   max-width: 100%;
   height: 245px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   right: 0;
   left: 0;
@@ -175,33 +145,20 @@ h1 {
 }
 
 article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   width: 100%;
 }
 
 aside {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 650px;
   height: auto;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  align-self: center;
+  justify-content: center;
+  align-items: baseline;
   margin-top: 60px;
   margin-bottom: 80px;
   border-radius: 20px;
@@ -212,12 +169,10 @@ aside {
   color: #fcca46;
 }
 aside .dots span:nth-child(2) {
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
+  animation-delay: 300ms;
 }
 aside .dots span:nth-child(3) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
+  animation-delay: 600ms;
 }
 aside .dots span {
   width: 7px;
@@ -226,24 +181,12 @@ aside .dots span {
   background-color: #fcca46;
   border-radius: 50%;
   display: inline-block;
-  -webkit-animation: dotsanimation 1500ms infinite ease-in-out;
-          animation: dotsanimation 1500ms infinite ease-in-out;
-}
-@-webkit-keyframes dotsanimation {
-  50% {
-    opacity: 0;
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-  100% {
-    opacity: 0;
-  }
+  animation: dotsanimation 1500ms infinite ease-in-out;
 }
 @keyframes dotsanimation {
   50% {
     opacity: 0;
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    transform: scale(0.7);
   }
   100% {
     opacity: 0;
@@ -263,16 +206,10 @@ aside .dots span {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   max-width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   right: 0;
   left: 0;
@@ -283,8 +220,7 @@ footer {
 }
 @media screen and (max-width: 1600px) {
   footer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 25px;
   }
 }
@@ -293,43 +229,20 @@ footer a {
   font-size: 40px;
 }
 footer a:hover {
-  -webkit-animation: wiggle 3000ms infinite;
-          animation: wiggle 3000ms infinite;
-}
-@-webkit-keyframes wiggle {
-  0%, 4%, 7%, 10% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  2%, 5%, 8% {
-    -webkit-transform: rotate(-4deg);
-            transform: rotate(-4deg);
-  }
-  3%, 6%, 9% {
-    -webkit-transform: rotate(4deg);
-            transform: rotate(4deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
+  animation: wiggle 3000ms infinite;
 }
 @keyframes wiggle {
   0%, 4%, 7%, 10% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   2%, 5%, 8% {
-    -webkit-transform: rotate(-4deg);
-            transform: rotate(-4deg);
+    transform: rotate(-4deg);
   }
   3%, 6%, 9% {
-    -webkit-transform: rotate(4deg);
-            transform: rotate(4deg);
+    transform: rotate(4deg);
   }
   100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 @media screen and (max-width: 1600px) {
@@ -349,38 +262,22 @@ a {
 }
 
 .restotitle {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .restomenu {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
   max-width: 1190px;
   min-width: 90%;
   margin: 10px;
   padding-top: 150px;
-  -webkit-box-shadow: 0 0 10px grey;
-          box-shadow: 0 0 10px grey;
+  box-shadow: 0 0 10px grey;
 }
 @media screen and (max-width: 1200px) {
   .restomenu {
@@ -394,13 +291,8 @@ a {
 }
 
 .course {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   width: 100%;
   padding-bottom: 20px;
 }
@@ -408,18 +300,12 @@ a {
 .course-title {
   padding-top: 50px;
   padding-bottom: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .choice {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   width: 90%;
   padding-left: 100px;
   font-size: 25px;
@@ -428,12 +314,8 @@ a {
 }
 
 .price {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   width: 10%;
   padding-right: 100px;
   font-weight: bolder;
@@ -492,8 +374,6 @@ h3 {
 }
 .button-lanoteenchantee .fas {
   font-size: 70px;
-  background: -webkit-gradient(linear, left top, right top, from(#f05060), to(#f6916a));
-  background: -o-linear-gradient(left, #f05060, #f6916a);
   background: linear-gradient(to right, #f05060, #f6916a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -514,28 +394,18 @@ h3 {
 
 .button-lanoteenchantee--zoom {
   opacity: 1;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 .button-lanoteenchantee--zoom h2, .button-lanoteenchantee--zoom a, .button-lanoteenchantee--zoom .fas {
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  transition: -webkit-transform 200ms ease-in-out;
-  -o-transition: transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
 }
 .button-lanoteenchantee--zoom:hover h2, .button-lanoteenchantee--zoom:hover .fas {
   opacity: 0.5;
-  -webkit-transform: scale(1.15);
-      -ms-transform: scale(1.15);
-          transform: scale(1.15);
+  transform: scale(1.15);
 }
 .button-lanoteenchantee--zoom:hover a {
   opacity: 0.5;
-  -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .restomenu-lanoteenchantee {
@@ -545,8 +415,6 @@ h3 {
 .restomenu-lanoteenchantee .fas {
   font-size: 90px;
   padding-bottom: 10px;
-  background: -webkit-gradient(linear, left top, right top, from(#f05060), to(#f6916a));
-  background: -o-linear-gradient(left, #f05060, #f6916a);
   background: linear-gradient(to right, #f05060, #f6916a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -571,8 +439,6 @@ h3 {
   position: absolute;
   bottom: -5px;
   right: 0;
-  -webkit-transition: all 300ms;
-  -o-transition: all 300ms;
   transition: all 300ms;
 }
 .restomenu-lanoteenchantee h5 span:hover::before {
@@ -580,20 +446,14 @@ h3 {
   left: 0;
 }
 .restomenu-lanoteenchantee h5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 40px;
   font-weight: bolder;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-left: 90px;
   padding-right: 90px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .restomenu-lanoteenchantee h5::before {
   content: "";
@@ -611,17 +471,11 @@ h3 {
 }
 
 .footmenu-lanoteenchantee {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .footmenu-lanoteenchantee .fas {
   font-size: 60px;
-  background: -webkit-gradient(linear, left top, right top, from(#f05060), to(#f6916a));
-  background: -o-linear-gradient(left, #f05060, #f6916a);
   background: linear-gradient(to right, #f05060, #f6916a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -638,8 +492,6 @@ h3 {
 }
 .button-lechicalafrancaise h2 {
   font-family: "croissantone", "Arial", sans-serif;
-  background: -webkit-gradient(linear, left top, right bottom, from(#e38a12), to(#6e4ccc));
-  background: -o-linear-gradient(left top, #e38a12, #6e4ccc);
   background: linear-gradient(to right bottom, #e38a12, #6e4ccc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -656,28 +508,18 @@ h3 {
 
 .button-lechicalafrancaise--zoom {
   opacity: 1;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 .button-lechicalafrancaise--zoom h2, .button-lechicalafrancaise--zoom a, .button-lechicalafrancaise--zoom .fas {
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  transition: -webkit-transform 200ms ease-in-out;
-  -o-transition: transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
 }
 .button-lechicalafrancaise--zoom:hover h2, .button-lechicalafrancaise--zoom:hover .fas {
   opacity: 0.5;
-  -webkit-transform: scale(1.15);
-      -ms-transform: scale(1.15);
-          transform: scale(1.15);
+  transform: scale(1.15);
 }
 .button-lechicalafrancaise--zoom:hover a {
   opacity: 0.5;
-  -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .restomenu-lechicalafrancaise {
@@ -685,8 +527,6 @@ h3 {
 }
 .restomenu-lechicalafrancaise h4 {
   font-family: "croissantone", "Arial", sans-serif;
-  background: -webkit-gradient(linear, left top, right bottom, from(#e38a12), to(#6e4ccc));
-  background: -o-linear-gradient(left top, #e38a12, #6e4ccc);
   background: linear-gradient(to right bottom, #e38a12, #6e4ccc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -698,22 +538,16 @@ h3 {
 }
 
 .firstpartmenu-lechicalafrancaise h5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 30px;
   font-weight: bolder;
   font-family: "Cantata One", serif;
   color: #e38a12;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-left: 90px;
   padding-right: 90px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .firstpartmenu-lechicalafrancaise h5 span {
   position: relative;
@@ -726,8 +560,6 @@ h3 {
   position: absolute;
   bottom: -5px;
   right: 0;
-  -webkit-transition: all 300ms;
-  -o-transition: all 300ms;
   transition: all 300ms;
 }
 .firstpartmenu-lechicalafrancaise h5 span:hover::before {
@@ -750,22 +582,16 @@ h3 {
 }
 
 .secondpartmenu-lechicalafrancaise h5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 30px;
   font-weight: bolder;
   font-family: "Cantata One", serif;
   color: #a56799;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-left: 90px;
   padding-right: 90px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .secondpartmenu-lechicalafrancaise h5 span {
   position: relative;
@@ -778,8 +604,6 @@ h3 {
   position: absolute;
   bottom: -5px;
   right: 0;
-  -webkit-transition: all 300ms;
-  -o-transition: all 300ms;
   transition: all 300ms;
 }
 .secondpartmenu-lechicalafrancaise h5 span:hover::before {
@@ -802,22 +626,16 @@ h3 {
 }
 
 .thirdpartmenu-lechicalafrancaise h5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 30px;
   font-weight: bolder;
   font-family: "Cantata One", serif;
   color: #6e4ccc;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-left: 90px;
   padding-right: 90px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .thirdpartmenu-lechicalafrancaise h5 span {
   position: relative;
@@ -830,8 +648,6 @@ h3 {
   position: absolute;
   bottom: -5px;
   right: 0;
-  -webkit-transition: all 300ms;
-  -o-transition: all 300ms;
   transition: all 300ms;
 }
 .thirdpartmenu-lechicalafrancaise h5 span:hover::before {
@@ -870,8 +686,6 @@ h3 {
 
 .footmenu-lechicalafrancaise h2 {
   font-family: "croissantone", "Arial", sans-serif;
-  background: -webkit-gradient(linear, left top, right bottom, from(#e38a12), to(#6e4ccc));
-  background: -o-linear-gradient(left top, #e38a12, #6e4ccc);
   background: linear-gradient(to right bottom, #e38a12, #6e4ccc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -884,8 +698,6 @@ h3 {
 }
 .button-ledelicedespapilles h2 {
   font-family: "Dancing Script", cursive;
-  background: -webkit-gradient(linear, left top, right bottom, from(#0229dd), to(#0889fb));
-  background: -o-linear-gradient(left top, #0229dd, #0889fb);
   background: linear-gradient(to right bottom, #0229dd, #0889fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -902,28 +714,18 @@ h3 {
 
 .button-ledelicedespapilles--zoom {
   opacity: 1;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 .button-ledelicedespapilles--zoom h2, .button-ledelicedespapilles--zoom a, .button-ledelicedespapilles--zoom .fas {
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  transition: -webkit-transform 200ms ease-in-out;
-  -o-transition: transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
 }
 .button-ledelicedespapilles--zoom:hover h2, .button-ledelicedespapilles--zoom:hover .fas {
   opacity: 0.5;
-  -webkit-transform: scale(1.15);
-      -ms-transform: scale(1.15);
-          transform: scale(1.15);
+  transform: scale(1.15);
 }
 .button-ledelicedespapilles--zoom:hover a {
   opacity: 0.5;
-  -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .restomenu-ledelicedespapilles {
@@ -931,8 +733,6 @@ h3 {
 }
 .restomenu-ledelicedespapilles h4 {
   font-family: "Dancing Script", cursive;
-  background: -webkit-gradient(linear, left top, right bottom, from(#0229dd), to(#0889fb));
-  background: -o-linear-gradient(left top, #0229dd, #0889fb);
   background: linear-gradient(to right bottom, #0229dd, #0889fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -947,27 +747,23 @@ h3 {
   font-family: "segoeregular", "Arial", sans-serif;
 }
 .restomenu-ledelicedespapilles .choice {
+  font-size: 25px;
   padding-left: 200px;
 }
 .restomenu-ledelicedespapilles .price {
+  font-size: 25px;
   padding-right: 200px;
   font-weight: lighter;
 }
 
 .firstpartmenu-ledelicedespapilles h5 {
-  font-size: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-size: 35px;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-left: 70px;
   padding-right: 70px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .firstpartmenu-ledelicedespapilles h5 span {
   position: relative;
@@ -980,8 +776,6 @@ h3 {
   position: absolute;
   bottom: -5px;
   right: 0;
-  -webkit-transition: all 300ms;
-  -o-transition: all 300ms;
   transition: all 300ms;
 }
 .firstpartmenu-ledelicedespapilles h5 span:hover::before {
@@ -1004,19 +798,13 @@ h3 {
 }
 
 .secondpartmenu-ledelicedespapilles h5 {
-  font-size: 33px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-size: 35px;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-left: 70px;
   padding-right: 70px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .secondpartmenu-ledelicedespapilles h5 span {
   position: relative;
@@ -1029,8 +817,6 @@ h3 {
   position: absolute;
   bottom: -5px;
   right: 0;
-  -webkit-transition: all 300ms;
-  -o-transition: all 300ms;
   transition: all 300ms;
 }
 .secondpartmenu-ledelicedespapilles h5 span:hover::before {
@@ -1053,19 +839,13 @@ h3 {
 }
 
 .thirdpartmenu-ledelicedespapilles h5 {
-  font-size: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-size: 35px;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-left: 70px;
   padding-right: 70px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .thirdpartmenu-ledelicedespapilles h5 span {
   position: relative;
@@ -1078,8 +858,6 @@ h3 {
   position: absolute;
   bottom: -5px;
   right: 0;
-  -webkit-transition: all 300ms;
-  -o-transition: all 300ms;
   transition: all 300ms;
 }
 .thirdpartmenu-ledelicedespapilles h5 span:hover::before {
@@ -1103,8 +881,6 @@ h3 {
 
 .footmenu-ledelicedespapilles h2 {
   font-family: "Dancing Script", cursive;
-  background: -webkit-gradient(linear, left top, right bottom, from(#0229dd), to(#0889fb));
-  background: -o-linear-gradient(left top, #0229dd, #0889fb);
   background: linear-gradient(to right bottom, #0229dd, #0889fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1118,8 +894,6 @@ h3 {
 }
 .button-lapalettedugout h2 {
   font-family: "kaushanscript", cursive;
-  background: -webkit-gradient(linear, left top, right bottom, from(#06923a), to(#beff7d));
-  background: -o-linear-gradient(left top, #06923a, #beff7d);
   background: linear-gradient(to right bottom, #06923a, #beff7d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1135,28 +909,18 @@ h3 {
 
 .button-lapalettedugout--zoom {
   opacity: 1;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 .button-lapalettedugout--zoom h2, .button-lapalettedugout--zoom a, .button-lapalettedugout--zoom .fas {
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  transition: -webkit-transform 200ms ease-in-out;
-  -o-transition: transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
 }
 .button-lapalettedugout--zoom:hover h2, .button-lapalettedugout--zoom:hover .fas {
   opacity: 0.5;
-  -webkit-transform: scale(1.15);
-      -ms-transform: scale(1.15);
-          transform: scale(1.15);
+  transform: scale(1.15);
 }
 .button-lapalettedugout--zoom:hover a {
   opacity: 0.5;
-  -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .restomenu-lapalettedugout {
@@ -1164,8 +928,6 @@ h3 {
 }
 .restomenu-lapalettedugout h4 {
   font-family: "kaushanscript", cursive;
-  background: -webkit-gradient(linear, left top, right bottom, from(#06923a), to(#beff7d));
-  background: -o-linear-gradient(left top, #06923a, #beff7d);
   background: linear-gradient(to right bottom, #06923a, #beff7d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1180,26 +942,22 @@ h3 {
   font-family: "segoeregular", "Arial", sans-serif;
 }
 .restomenu-lapalettedugout .choice {
+  font-size: 25px;
   padding-left: 200px;
 }
 .restomenu-lapalettedugout .price {
+  font-size: 25px;
   padding-right: 200px;
   font-weight: lighter;
 }
 .restomenu-lapalettedugout h5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  font-size: 33px;
+  font-size: 35px;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-left: 70px;
   padding-right: 70px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .firstpartmenu-lapalettedugout h5 span {
@@ -1213,8 +971,6 @@ h3 {
   position: absolute;
   bottom: -5px;
   right: 0;
-  -webkit-transition: all 300ms;
-  -o-transition: all 300ms;
   transition: all 300ms;
 }
 .firstpartmenu-lapalettedugout h5 span:hover::before {
@@ -1247,8 +1003,6 @@ h3 {
   position: absolute;
   bottom: -5px;
   right: 0;
-  -webkit-transition: all 300ms;
-  -o-transition: all 300ms;
   transition: all 300ms;
 }
 .secondpartmenu-lapalettedugout h5 span:hover::before {
@@ -1281,8 +1035,6 @@ h3 {
   position: absolute;
   bottom: -5px;
   right: 0;
-  -webkit-transition: all 300ms;
-  -o-transition: all 300ms;
   transition: all 300ms;
 }
 .thirdpartmenu-lapalettedugout h5 span:hover::before {
@@ -1306,8 +1058,6 @@ h3 {
 
 .footmenu-lapalettedugout h2 {
   font-family: "kaushanscript", cursive;
-  background: -webkit-gradient(linear, left top, right bottom, from(#06923a), to(#beff7d));
-  background: -o-linear-gradient(left top, #06923a, #beff7d);
   background: linear-gradient(to right bottom, #06923a, #beff7d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1316,3 +1066,5 @@ h3 {
 }
 
 /** END of Import of sass elements **/
+
+/*# sourceMappingURL=style.css.map */
