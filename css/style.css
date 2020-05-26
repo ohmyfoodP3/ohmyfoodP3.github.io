@@ -74,6 +74,11 @@ table {
   height: 764px;
   margin: 50px;
   box-shadow: 0 0 10px grey;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+.button:hover {
+  opacity: 0.5;
 }
 
 .maincontainer {
@@ -130,8 +135,13 @@ header {
 
 h1 {
   letter-spacing: -5px;
-  font-size: 70px;
+  font-size: 100px;
   font-weight: bolder;
+}
+@media screen and (max-width: 1600px) {
+  h1 {
+    font-size: 70px;
+  }
 }
 
 article {
@@ -152,8 +162,8 @@ aside {
   margin-top: 60px;
   margin-bottom: 80px;
   border-radius: 20px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #579C87;
   font-family: "Montserrat", sans-serif;
   color: #fcca46;
@@ -216,7 +226,7 @@ footer {
 }
 
 footer a {
-  font-size: 30px;
+  font-size: 40px;
 }
 footer a:hover {
   animation: wiggle 3000ms infinite;
@@ -233,6 +243,11 @@ footer a:hover {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+@media screen and (max-width: 1600px) {
+  footer a {
+    font-size: 30px;
   }
 }
 
@@ -358,7 +373,7 @@ h3 {
   background-color: #fcdfdb;
 }
 .button-lanoteenchantee .fas {
-  font-size: 80px;
+  font-size: 70px;
   background: linear-gradient(to right, #f05060, #f6916a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -366,14 +381,14 @@ h3 {
 .button-lanoteenchantee h2 {
   font-family: "devonshire", "Arial", sans-serif;
   color: #3d1319;
-  font-size: 60px;
+  font-size: 50px;
   padding-top: 10px;
   padding-bottom: 60px;
 }
 .button-lanoteenchantee a {
   font-family: "segoeregular", "Arial", sans-serif;
   color: #3d1319;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bolder;
 }
 
@@ -480,15 +495,15 @@ h3 {
   background: linear-gradient(to right bottom, #e38a12, #6e4ccc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 40px;
-  padding-top: 15px;
+  font-size: 33px;
+  padding-top: 30px;
   padding-bottom: 70px;
 }
 .button-lechicalafrancaise a {
   font-family: "Cantata One", serif;
   color: #e38a12;
   font-weight: bolder;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .button-lechicalafrancaise--zoom {
@@ -687,14 +702,14 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 15px;
-  font-size: 60px;
+  font-size: 50px;
   padding-left: 15px;
   padding-bottom: 70px;
 }
 .button-ledelicedespapilles a {
   color: #0887f1;
   font-family: "segoeregular", "Arial", sans-serif;
-  font-size: 70px;
+  font-size: 60px;
 }
 
 .button-ledelicedespapilles--zoom {
@@ -881,13 +896,13 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 15px;
-  font-size: 60px;
+  font-size: 50px;
   padding-bottom: 70px;
 }
 .button-lapalettedugout a {
   color: #72bf56;
   font-family: "segoeregular", "Arial", sans-serif;
-  font-size: 70px;
+  font-size: 60px;
 }
 
 .button-lapalettedugout--zoom {
