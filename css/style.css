@@ -75,7 +75,7 @@ table {
   margin: 50px;
   box-shadow: 0 0 10px grey;
   opacity: 1;
-  transition: all 200ms 100ms ease-in-out;
+  transition: all 300ms 150ms ease-in-out;
 }
 .button:hover {
   opacity: 0.5;
@@ -594,7 +594,7 @@ h3 {
   transform: scale(1);
 }
 .button-lanoteenchantee--zoom h2, .button-lanoteenchantee--zoom a, .button-lanoteenchantee--zoom .fas {
-  transition: transform 300ms ease-in-out;
+  transition: transform 450ms ease-in-out;
 }
 .button-lanoteenchantee--zoom:hover h2, .button-lanoteenchantee--zoom:hover .fas {
   opacity: 0.5;
@@ -810,7 +810,7 @@ h3 {
   transform: scale(1);
 }
 .button-lechicalafrancaise--zoom h2, .button-lechicalafrancaise--zoom a, .button-lechicalafrancaise--zoom .fas {
-  transition: transform 300ms ease-in-out;
+  transition: transform 450ms ease-in-out;
 }
 .button-lechicalafrancaise--zoom:hover h2, .button-lechicalafrancaise--zoom:hover .fas {
   opacity: 0.5;
@@ -1172,7 +1172,7 @@ h3 {
   transform: scale(1);
 }
 .button-ledelicedespapilles--zoom h2, .button-ledelicedespapilles--zoom a, .button-ledelicedespapilles--zoom .fas {
-  transition: transform 300ms ease-in-out;
+  transition: transform 450ms ease-in-out;
 }
 .button-ledelicedespapilles--zoom:hover h2, .button-ledelicedespapilles--zoom:hover .fas {
   opacity: 0.5;
@@ -1532,7 +1532,7 @@ h3 {
   transform: scale(1);
 }
 .button-lapalettedugout--zoom h2, .button-lapalettedugout--zoom a, .button-lapalettedugout--zoom .fas {
-  transition: transform 300ms ease-in-out;
+  transition: transform 450ms ease-in-out;
 }
 .button-lapalettedugout--zoom:hover h2, .button-lapalettedugout--zoom:hover .fas {
   opacity: 0.5;
