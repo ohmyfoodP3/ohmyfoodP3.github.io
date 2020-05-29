@@ -925,7 +925,6 @@ h3 {
 }
 @media screen and (max-width: 768px) {
   .firstpartmenu-lechicalafrancaise h5 {
-    width: auto;
     justify-content: space-around;
     font-size: 22px;
     padding-left: 25px;
@@ -1005,7 +1004,6 @@ h3 {
 }
 @media screen and (max-width: 768px) {
   .secondpartmenu-lechicalafrancaise h5 {
-    width: auto;
     justify-content: space-around;
     font-size: 22px;
     padding-left: 25px;
@@ -1085,7 +1083,6 @@ h3 {
 }
 @media screen and (max-width: 768px) {
   .thirdpartmenu-lechicalafrancaise h5 {
-    width: auto;
     justify-content: space-around;
     font-size: 22px;
     padding-left: 25px;
@@ -1199,7 +1196,7 @@ h3 {
 }
 @media screen and (max-width: 992px) {
   .restomenu-ledelicedespapilles h4 {
-    font-size: 70px;
+    font-size: 60px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1315,7 +1312,6 @@ h3 {
 }
 @media screen and (max-width: 768px) {
   .firstpartmenu-ledelicedespapilles h5 {
-    width: auto;
     justify-content: space-around;
   }
 }
@@ -1389,7 +1385,6 @@ h3 {
 }
 @media screen and (max-width: 768px) {
   .secondpartmenu-ledelicedespapilles h5 {
-    width: auto;
     justify-content: space-around;
   }
 }
@@ -1463,7 +1458,6 @@ h3 {
 }
 @media screen and (max-width: 768px) {
   .thirdpartmenu-ledelicedespapilles h5 {
-    width: auto;
     justify-content: space-around;
   }
 }
@@ -1560,6 +1554,11 @@ h3 {
 @media screen and (max-width: 992px) {
   .restomenu-lapalettedugout h4 {
     font-size: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .restomenu-lapalettedugout h4 {
+    font-size: 55px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1675,7 +1674,6 @@ h3 {
 }
 @media screen and (max-width: 768px) {
   .firstpartmenu-lapalettedugout h5 {
-    width: auto;
     justify-content: space-around;
   }
 }
@@ -1735,7 +1733,6 @@ h3 {
 }
 @media screen and (max-width: 768px) {
   .secondpartmenu-lapalettedugout h5 {
-    width: auto;
     justify-content: space-around;
   }
 }
@@ -1795,7 +1792,6 @@ h3 {
 }
 @media screen and (max-width: 768px) {
   .thirdpartmenu-lapalettedugout h5 {
-    width: auto;
     justify-content: space-around;
   }
 }
