@@ -710,12 +710,8 @@ h3 {
 @media screen and (max-width: 992px) {
   .restomenu-lanoteenchantee h5 {
     font-size: 25px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .restomenu-lanoteenchantee h5 {
-    width: auto;
-    justify-content: space-around;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media screen and (max-width: 576px) {
