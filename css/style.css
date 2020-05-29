@@ -91,6 +91,10 @@ table {
   }
 }
 
+.button h2 {
+  margin: 30px;
+}
+
 .maincontainer {
   display: flex;
   flex-direction: column;
@@ -397,7 +401,7 @@ h3 {
   justify-content: center;
   max-width: 1190px;
   min-width: 90%;
-  margin: 10px;
+  margin: 50px;
   padding-top: 150px;
   box-shadow: 0 0 10px grey;
 }
@@ -410,6 +414,10 @@ h3 {
     margin-left: 10px;
     margin-right: 10px;
   }
+}
+
+.restomenu h4, h5 {
+  text-align: center;
 }
 
 .firstpartmenu, .secondpartmenu, .thirdpartmenu {
@@ -450,6 +458,13 @@ h3 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+@media screen and (max-width: 768px) {
+  .choice {
+    text-align: left;
+    font-size: 20px;
+    padding-left: 30px;
+  }
+}
 @media screen and (max-width: 576px) {
   .choice {
     font-size: 18px;
@@ -471,6 +486,13 @@ h3 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+@media screen and (max-width: 768px) {
+  .price {
+    text-align: center;
+    font-size: 25px;
+    padding-right: 30px;
+  }
+}
 @media screen and (max-width: 576px) {
   .price {
     font-size: 18px;
@@ -483,6 +505,7 @@ h3 {
 }
 
 .footmenu {
+  text-align: center;
   padding-top: 90px;
   padding-bottom: 120px;
 }
@@ -598,6 +621,11 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 992px) {
+  .restomenu-lanoteenchantee .fas {
+    font-size: 50px;
+  }
+}
 @media screen and (max-width: 576px) {
   .restomenu-lanoteenchantee .fas {
     font-size: 40px;
@@ -607,6 +635,11 @@ h3 {
   font-family: "devonshire", "Arial", sans-serif;
   color: #3d1319;
   font-size: 80px;
+}
+@media screen and (max-width: 992px) {
+  .restomenu-lanoteenchantee h4 {
+    font-size: 60px;
+  }
 }
 @media screen and (max-width: 576px) {
   .restomenu-lanoteenchantee h4 {
@@ -674,13 +707,33 @@ h3 {
     border-radius: 5px;
   }
 }
+@media screen and (max-width: 992px) {
+  .restomenu-lanoteenchantee h5 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .restomenu-lanoteenchantee h5 {
+    width: auto;
+    justify-content: space-around;
+  }
+}
 @media screen and (max-width: 576px) {
   .restomenu-lanoteenchantee h5 {
     font-size: 20px;
-    width: 85%;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .restomenu-lanoteenchantee .choice {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .restomenu-lanoteenchantee .price {
+    font-size: 20px;
   }
 }
 
@@ -695,6 +748,11 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 992px) {
+  .footmenu-lanoteenchantee .fas {
+    font-size: 50px;
+  }
+}
 @media screen and (max-width: 576px) {
   .footmenu-lanoteenchantee .fas {
     font-size: 20px;
@@ -706,6 +764,11 @@ h3 {
   color: #3d1319;
   font-size: 60px;
   padding-left: 15px;
+}
+@media screen and (max-width: 992px) {
+  .footmenu-lanoteenchantee h2 {
+    font-size: 50px;
+  }
 }
 @media screen and (max-width: 576px) {
   .footmenu-lanoteenchantee h2 {
@@ -772,13 +835,33 @@ h3 {
   font-size: 60px;
   padding-bottom: 15px;
 }
+@media screen and (max-width: 992px) {
+  .restomenu-lechicalafrancaise h4 {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .restomenu-lechicalafrancaise h4 {
+    font-size: 35px;
+  }
+}
 @media screen and (max-width: 576px) {
   .restomenu-lechicalafrancaise h4 {
     font-size: 30px;
   }
 }
+@media screen and (max-width: 992px) {
+  .restomenu-lechicalafrancaise .choice {
+    font-size: 20px;
+  }
+}
 .restomenu-lechicalafrancaise .price {
   font-weight: initial;
+}
+@media screen and (max-width: 992px) {
+  .restomenu-lechicalafrancaise .price {
+    font-size: 20px;
+  }
 }
 
 .firstpartmenu-lechicalafrancaise h5 {
@@ -838,10 +921,23 @@ h3 {
     border-radius: 5px;
   }
 }
+@media screen and (max-width: 992px) {
+  .firstpartmenu-lechicalafrancaise h5 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .firstpartmenu-lechicalafrancaise h5 {
+    width: auto;
+    justify-content: space-around;
+    font-size: 22px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
 @media screen and (max-width: 576px) {
   .firstpartmenu-lechicalafrancaise h5 {
     font-size: 18px;
-    width: 85%;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 20px;
@@ -905,10 +1001,23 @@ h3 {
     border-radius: 5px;
   }
 }
+@media screen and (max-width: 992px) {
+  .secondpartmenu-lechicalafrancaise h5 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .secondpartmenu-lechicalafrancaise h5 {
+    width: auto;
+    justify-content: space-around;
+    font-size: 22px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
 @media screen and (max-width: 576px) {
   .secondpartmenu-lechicalafrancaise h5 {
     font-size: 18px;
-    width: 85%;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 20px;
@@ -972,10 +1081,23 @@ h3 {
     border-radius: 5px;
   }
 }
+@media screen and (max-width: 992px) {
+  .thirdpartmenu-lechicalafrancaise h5 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .thirdpartmenu-lechicalafrancaise h5 {
+    width: auto;
+    justify-content: space-around;
+    font-size: 22px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
 @media screen and (max-width: 576px) {
   .thirdpartmenu-lechicalafrancaise h5 {
     font-size: 18px;
-    width: 85%;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 20px;
@@ -1004,6 +1126,11 @@ h3 {
   -webkit-text-fill-color: transparent;
   font-size: 40px;
   padding-left: 15px;
+}
+@media screen and (max-width: 768px) {
+  .footmenu-lechicalafrancaise h2 {
+    font-size: 25px;
+  }
 }
 @media screen and (max-width: 576px) {
   .footmenu-lechicalafrancaise h2 {
@@ -1073,6 +1200,11 @@ h3 {
   padding-right: 15px;
   padding-bottom: 60px;
 }
+@media screen and (max-width: 992px) {
+  .restomenu-ledelicedespapilles h4 {
+    font-size: 70px;
+  }
+}
 @media screen and (max-width: 576px) {
   .restomenu-ledelicedespapilles h4 {
     font-size: 40px;
@@ -1086,6 +1218,12 @@ h3 {
 .restomenu-ledelicedespapilles .choice {
   font-size: 25px;
   padding-left: 200px;
+}
+@media screen and (max-width: 992px) {
+  .restomenu-ledelicedespapilles .choice {
+    font-size: 22px;
+    padding-left: 100px;
+  }
 }
 @media screen and (max-width: 576px) {
   .restomenu-ledelicedespapilles .choice {
@@ -1101,6 +1239,12 @@ h3 {
   font-size: 25px;
   padding-right: 200px;
   font-weight: lighter;
+}
+@media screen and (max-width: 992px) {
+  .restomenu-ledelicedespapilles .price {
+    font-size: 22px;
+    padding-right: 100px;
+  }
 }
 @media screen and (max-width: 576px) {
   .restomenu-ledelicedespapilles .price {
@@ -1167,10 +1311,20 @@ h3 {
     border-radius: 5px;
   }
 }
+@media screen and (max-width: 992px) {
+  .firstpartmenu-ledelicedespapilles h5 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .firstpartmenu-ledelicedespapilles h5 {
+    width: auto;
+    justify-content: space-around;
+  }
+}
 @media screen and (max-width: 576px) {
   .firstpartmenu-ledelicedespapilles h5 {
     font-size: 20px;
-    width: 85%;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 20px;
@@ -1231,10 +1385,20 @@ h3 {
     border-radius: 5px;
   }
 }
+@media screen and (max-width: 992px) {
+  .secondpartmenu-ledelicedespapilles h5 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .secondpartmenu-ledelicedespapilles h5 {
+    width: auto;
+    justify-content: space-around;
+  }
+}
 @media screen and (max-width: 576px) {
   .secondpartmenu-ledelicedespapilles h5 {
     font-size: 20px;
-    width: 85%;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 20px;
@@ -1295,10 +1459,20 @@ h3 {
     border-radius: 5px;
   }
 }
+@media screen and (max-width: 992px) {
+  .thirdpartmenu-ledelicedespapilles h5 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .thirdpartmenu-ledelicedespapilles h5 {
+    width: auto;
+    justify-content: space-around;
+  }
+}
 @media screen and (max-width: 576px) {
   .thirdpartmenu-ledelicedespapilles h5 {
     font-size: 20px;
-    width: 85%;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 20px;
@@ -1313,6 +1487,11 @@ h3 {
   padding: 15px;
   font-size: 70px;
   padding-left: 15px;
+}
+@media screen and (max-width: 768px) {
+  .footmenu-ledelicedespapilles h2 {
+    font-size: 40px;
+  }
 }
 @media screen and (max-width: 576px) {
   .footmenu-ledelicedespapilles h2 {
@@ -1381,6 +1560,11 @@ h3 {
   padding-right: 15px;
   padding-bottom: 60px;
 }
+@media screen and (max-width: 992px) {
+  .restomenu-lapalettedugout h4 {
+    font-size: 70px;
+  }
+}
 @media screen and (max-width: 576px) {
   .restomenu-lapalettedugout h4 {
     font-size: 40px;
@@ -1394,6 +1578,12 @@ h3 {
 .restomenu-lapalettedugout .choice {
   font-size: 25px;
   padding-left: 200px;
+}
+@media screen and (max-width: 992px) {
+  .restomenu-lapalettedugout .choice {
+    font-size: 22px;
+    padding-left: 100px;
+  }
 }
 @media screen and (max-width: 576px) {
   .restomenu-lapalettedugout .choice {
@@ -1409,6 +1599,12 @@ h3 {
   font-size: 25px;
   padding-right: 200px;
   font-weight: lighter;
+}
+@media screen and (max-width: 992px) {
+  .restomenu-lapalettedugout .price {
+    font-size: 22px;
+    padding-right: 100px;
+  }
 }
 @media screen and (max-width: 576px) {
   .restomenu-lapalettedugout .price {
@@ -1428,6 +1624,11 @@ h3 {
   padding-left: 70px;
   padding-right: 70px;
   align-items: center;
+}
+@media screen and (max-width: 992px) {
+  .restomenu-lapalettedugout h5 {
+    font-size: 30px;
+  }
 }
 
 .firstpartmenu-lapalettedugout h5 span {
@@ -1475,10 +1676,15 @@ h3 {
     border-radius: 5px;
   }
 }
+@media screen and (max-width: 768px) {
+  .firstpartmenu-lapalettedugout h5 {
+    width: auto;
+    justify-content: space-around;
+  }
+}
 @media screen and (max-width: 576px) {
   .firstpartmenu-lapalettedugout h5 {
     font-size: 20px;
-    width: 85%;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 20px;
@@ -1530,10 +1736,15 @@ h3 {
     border-radius: 5px;
   }
 }
+@media screen and (max-width: 768px) {
+  .secondpartmenu-lapalettedugout h5 {
+    width: auto;
+    justify-content: space-around;
+  }
+}
 @media screen and (max-width: 576px) {
   .secondpartmenu-lapalettedugout h5 {
     font-size: 20px;
-    width: 85%;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 20px;
@@ -1585,10 +1796,15 @@ h3 {
     border-radius: 5px;
   }
 }
+@media screen and (max-width: 768px) {
+  .thirdpartmenu-lapalettedugout h5 {
+    width: auto;
+    justify-content: space-around;
+  }
+}
 @media screen and (max-width: 576px) {
   .thirdpartmenu-lapalettedugout h5 {
     font-size: 20px;
-    width: 85%;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 20px;
@@ -1602,6 +1818,11 @@ h3 {
   -webkit-text-fill-color: transparent;
   padding: 15px;
   font-size: 70px;
+}
+@media screen and (max-width: 992px) {
+  .footmenu-lapalettedugout h2 {
+    font-size: 50px;
+  }
 }
 @media screen and (max-width: 576px) {
   .footmenu-lapalettedugout h2 {
