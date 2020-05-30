@@ -1,0 +1,26 @@
+.button{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	width: 540px;
+	height: 764px;
+	margin: 50px;
+	@include boxshadow;
+	opacity: (1);
+	transition: all 300ms 150ms ease-in-out;
+	&:hover{
+		opacity: (0.5);
+	}
+	@include mobilemedium{
+		height: 480px;
+	}
+	@include mobilesmall{
+		height: 380px;
+	}
+}
+.button h2{
+	margin: 30px;
+}

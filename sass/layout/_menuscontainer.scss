@@ -1,0 +1,24 @@
+.menuscontainer{
+	display: flex;
+	flex-direction: column;
+	right: 0;
+	left: 0;
+	top: 240px;
+	position: absolute;
+	margin-bottom: 20px;
+	padding-top: 50px;
+	padding-bottom: 130px;
+	@include screen1600{
+		margin-top: -80px;
+		padding-bottom: 110px;
+	}
+	@include mobilemedium{
+
+		padding-bottom: 50px;
+	}
+	@include mobilesmall{
+
+		padding-bottom: 50px;
+	}
+
+}

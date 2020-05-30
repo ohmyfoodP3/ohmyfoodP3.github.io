@@ -1,0 +1,134 @@
+
+.button-lanoteenchantee{
+	background-color: $color-lanote-bg;
+	.fas{
+		font-size: 70px;
+		@include notemusic;
+		@include mobilesmall{
+			font-size: 30px;
+		}
+	}
+	h2{
+		@include lanoteenchanteetitle;
+		font-size: 50px;
+		justify-content: center;
+		text-align: center;
+		padding-top:10px;
+		padding-bottom: 60px;
+		@include mobilesmall{
+			font-size: 30px;
+			padding-bottom: 30px;
+		}
+	}
+	a{
+		@include lanoteenchanteemenu;
+		font-size: 50px;
+		font-weight: bolder;
+		@include mobilesmall{
+			font-size: 30px;
+		}	
+	}
+}
+.button-lanoteenchantee--zoom{
+	@include zoom;
+}
+
+.restomenu-lanoteenchantee{
+	background-color: $color-lanote-bg;
+	padding-top: 90px;
+	@include mobilesmall{
+		padding-top: 40px;
+	}
+	& .fas{
+		font-size: 90px;
+		padding-bottom: 10px;
+		@include notemusic;
+		@include mobilelarge{
+			font-size:50px;
+		}
+		@include mobilesmall{
+		font-size: 40px;
+		}
+	}
+	& h4{
+		@include lanoteenchanteetitle;
+		font-size: 80px;
+		@include mobilelarge{
+			font-size:60px;
+		}
+		@include mobilesmall{
+			font-size: 35px;
+		}
+	
+	}
+	& h5, p{
+		@include lanoteenchanteemenu;
+	}
+	& h5 span{
+		@include underline($color-lanote-txt);
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	& h5{
+		display: flex;
+		font-size: 40px;
+		font-weight: bolder;
+		width: 100%;
+		justify-content: space-between;
+		padding-left: 90px;
+		padding-right: 90px;
+		align-items: center;
+		@include bar($color-lanote-txt);
+		@include mobilelarge{
+		
+			font-size:25px;
+			padding-left: 	30px;
+			padding-right: 30px;
+		}
+
+		@include mobilesmall{
+		font-size: 20px;
+		width: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 20px;
+		}	
+	}
+	& .choice{
+		@include mobilelarge{
+			font-size:20px;
+		}	
+	}
+	& .price{
+		@include mobilelarge{
+			font-size:20px;
+		}
+	}
+}
+.footmenu-lanoteenchantee{
+	display: flex;
+	align-items: center;
+	& .fas{
+		font-size: 60px;
+		padding-top: 15px;
+		@include notemusic;
+		@include mobilelarge{
+			font-size:50px;
+		}
+		@include mobilesmall{
+			font-size: 20px;
+			padding-top: 10px;
+        }
+	}
+	& h2{
+		@include lanoteenchanteetitle;
+		font-size: 60px;
+		padding-left: 15px;
+		@include mobilelarge{
+			font-size:50px;
+		}
+		@include mobilesmall{
+			font-size: 30px;
+        }
+	}
+}

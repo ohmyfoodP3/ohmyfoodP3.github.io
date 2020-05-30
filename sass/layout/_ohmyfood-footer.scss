@@ -1,0 +1,43 @@
+footer{
+	display: flex;
+	max-width: 100%;	
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	right: 0;
+	left:0;
+	bottom: 0;
+	padding: 40px;
+	border-top: 1px solid $color-ohmyfood-border;
+	background-color: $color-ohmyfood-bg;
+	@include screen1600{
+			padding: 25px;
+	}
+	@include mobilemedium{
+		padding: 12px;
+	}
+	@include mobilesmall{
+		padding: 10px;
+	}
+}
+footer a{
+	font-size: 40px;
+	@include wiggleanimation;
+	@include screen1600{
+		font-size: 30px;
+	}
+	@include mobilemedium{
+		font-size: 24px;
+	}
+	@include mobilesmall{
+		width: 100%;
+		justify-content: space-between;
+		padding: 2px;
+		margin: 0px;
+		text-align: center;
+		font-size: 20px;
+	}
+}
+a {
+	text-decoration: none;
+}

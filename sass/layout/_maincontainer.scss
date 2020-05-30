@@ -1,0 +1,11 @@
+.maincontainer{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 1500px;
+	height: 100%;
+	max-height: 2388px;
+}
+h1, aside h2, footer a{
+	@include ohmyfoodtheme;
+}

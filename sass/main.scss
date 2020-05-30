@@ -1,0 +1,24 @@
+
+/** Import of sass elements  **/
+@import "./utils/variables";
+@import "./utils/fonctions";
+@import "./utils/mixins";
+@import "./utils/placeholder";
+/**@import "./vendors";**/
+@import "./base/reset";
+@import "./components/buttons";
+@import "./layout/maincontainer";
+@import "./layout/menuscontainer";
+@import "./layout/ohmyfood-header";
+@import "./layout/ohmyfood-article";
+@import "./layout/ohmyfood-aside";
+@import "./layout/ohmyfood-footer";
+@import "./layout/menuspages";
+@import "./themes/fonts";
+@import "./pages/lanoteenchantee";
+@import "./pages/lechicalafrancaise";
+@import "./pages/ledelicedespapilles";
+@import "./pages/lapalettedugout";
+/** END of Import of sass elements **/
+
+

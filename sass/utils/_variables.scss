@@ -1,0 +1,36 @@
+
+$color-ohmyfood-bg:  #579C87;
+$color-ohmyfood-border: #a1c181;
+$color-ohmyfood-txt: #fcca46;
+
+$color-restotitle-txt: #000;
+
+$color-lanote-bg: #fcdfdb;
+$color-lanote-txt: #3d1319; 
+
+$color-lechic-bg: #fff5fd;
+$color-lechicfirstpart-txt: #e38a12;
+$color-lechicsecondpart-txt: #a56799;
+$color-lechicthirdpart-txt: #6e4ccc;
+
+$color-ledelice-bg: #f0faff;
+$color-ledelicemenu-txt: #0887f1;
+$color-ledelicegradient1-txt: #0229dd;
+$color-ledelicegradientmiddle-txt: #0670f3;
+$color-ledelicegradient2-txt: #0889fb;
+$color-ledelice-txt: #000;
+
+$color-lapalette-bg: #eaffea;
+$color-lapalettemenu-txt: #72bf56;
+$color-lapalettegradient1-txt: #06923a;
+$color-lapalettegradient2-txt: #beff7d;
+$color-lapalette-txt: #000;
+
+
+$breakpoints:(
+    mobilesm: 576px,
+    mobilemd: 768px,
+    mobilelg: 992px,
+    mobilexl: 1200px,
+    screen1600: 1600px
+);

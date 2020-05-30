@@ -1,0 +1,41 @@
+aside{
+	display: flex;
+	width: 650px;
+	height: auto;
+	align-self: center;
+	justify-content: center;
+	align-items: baseline;
+	margin-top: 60px;
+	margin-bottom: 80px;
+	border-radius: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: $color-ohmyfood-bg;
+	@include ohmyfoodtheme;
+	@include dotsanim;
+	@include screen1600{
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin-bottom: 40px;
+	}
+	@include mobilemedium{
+		padding-top: 18px;
+		padding-bottom: 18px;
+		width: 70%;
+	}
+	@include mobilesmall{
+		padding-top: 15px;
+		padding-bottom: 15px;
+		width: 80%;
+	}
+}
+  .next{
+	font-size: 40px;
+	padding-right: 10px;
+	@include mobilemedium{
+		font-size: 30px;
+	}
+	@include mobilesmall{
+		font-size: 25px;
+	}
+  }

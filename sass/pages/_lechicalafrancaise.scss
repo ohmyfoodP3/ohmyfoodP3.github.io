@@ -1,0 +1,174 @@
+.button-lechicalafrancaise{
+    background-color: $color-lechic-bg;
+	h2{
+		@include lechicalafrancaisetitle;
+		font-size: 33px;
+		justify-content: center;
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom:70px;
+		@include mobilesmall{
+			font-size: 20px;
+			padding-bottom: 30px;
+		}
+	}
+	a{
+		@include lechicalafrancaisemenu;
+		font-weight: bolder;
+		font-size: 60px;
+		@include mobilesmall{
+			font-size: 30px;
+		}	
+	}
+}
+.button-lechicalafrancaise--zoom{
+	@include zoom;
+}
+.restomenu-lechicalafrancaise {
+	background-color: $color-lechic-bg;
+	& h4{
+		@include lechicalafrancaisetitle;
+		font-size: 60px;
+		padding-bottom: 15px;
+		@include mobilelarge{
+			font-size:45px;
+		}
+		@include mobilemedium{
+			font-size: 35px;
+		}
+		@include mobilesmall{
+			font-size: 30px;
+		}
+    }
+	& .choice{
+		@include mobilelarge{
+			font-size:20px;
+		}
+	}
+    & .price{
+		@include mobilelarge{
+			font-size:20px;
+		}
+        font-weight: initial;
+    }
+}
+
+.firstpartmenu-lechicalafrancaise h5{
+	display: flex;
+	font-size: 30px;
+	font-weight: bolder;
+	@include lechicalafrancaisemenu;
+	width: 100%;
+	justify-content: space-between;
+	padding-left: 90px;
+	padding-right: 90px;
+	align-items: center;
+	& span{
+		@include underline($color-lechicfirstpart-txt)
+	}
+	@include bar($color-lechicfirstpart-txt);
+	@include mobilelarge{
+		font-size:25px;
+	}
+	@include mobilemedium{
+		justify-content: space-around;
+		font-size: 22px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	@include mobilesmall{
+		width: auto;
+		font-size: 18px;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 20px;
+		}	
+}
+.secondpartmenu-lechicalafrancaise h5{
+	display: flex;
+	font-size: 30px;
+	font-weight: bolder;
+	@include lechicalafrancaisemenumaincourse;
+	width: 100%;
+	justify-content: space-between;
+	padding-left: 90px;
+	padding-right: 90px;
+	align-items: center;
+	& span{
+		@include underline($color-lechicsecondpart-txt);
+	}
+	@include bar($color-lechicsecondpart-txt);
+	@include mobilelarge{
+		font-size:25px;
+	}
+	@include mobilemedium{
+		justify-content: space-around;
+		font-size: 22px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	@include mobilesmall{
+		width: auto;
+		font-size: 18px;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 20px;
+		}	
+}
+.thirdpartmenu-lechicalafrancaise h5{
+	display: flex;
+	font-size: 30px;
+	font-weight: bolder;
+	@include lechicalafrancaisemenudessert;
+	width: 100%;
+	justify-content: space-between;
+	padding-left: 90px;
+	padding-right: 90px;
+	align-items: center;
+	& span{
+		@include underline($color-lechicthirdpart-txt)
+	}
+	@include bar($color-lechicthirdpart-txt);
+	@include mobilelarge{
+		font-size:25px;
+	}
+	@include mobilemedium{
+		justify-content: space-around;
+		font-size: 22px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	@include mobilesmall{
+		width: auto;
+		font-size: 18px;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 20px;
+		}
+}
+.firstpartmenu-lechicalafrancaise {
+	@include lechicalafrancaisemenu;
+
+}
+.secondpartmenu-lechicalafrancaise p{
+	@include lechicalafrancaisemenumaincourse;
+
+}
+.thirdpartmenu-lechicalafrancaise p{
+	@include lechicalafrancaisemenudessert;
+	
+}
+
+.footmenu-lechicalafrancaise{	
+	& h2{
+		@include lechicalafrancaisetitle;
+		font-size: 40px;
+		padding-left: 15px;
+		@include mobilemedium{
+			font-size: 25px;
+		}
+		@include mobilesmall{
+			font-size: 20px;
+        }	
+	}
+}
